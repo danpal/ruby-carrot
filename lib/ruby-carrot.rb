@@ -13,13 +13,11 @@ module RubyCarrot
     #Connection object
     @conn = nil
     @api_id = nil
-    @api_user = nil
     @api_key = nil
 
     # Initializes the carrot and save the account information on class variables
-    def initialize(user, id, key)
+    def initialize(id, key)
       @api_id = id
-      @api_user = user
       @api_key = key
 
       setup
